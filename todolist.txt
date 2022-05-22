@@ -1,0 +1,4 @@
+1. pensar em um jeito de desalocar os recursos de uma cena quando ela for 
+   descarregada e alocar de novo quando carregar a cena novamente
+2. pensar em como usar o SDL_ConvertSurface com transparência do PNG
+3. usar o hardware accelerated renderer
