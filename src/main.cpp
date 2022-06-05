@@ -6,6 +6,7 @@
 #include "engine/scene.h"
 #include "engine/sprite.h"
 #include "behaviors/eight_directions.h"
+#include "map/map_loader.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ class Scene01 : public Scene {
   public:
     Scene01() : Scene() {
       addSprite(new Sprite("images/background.png", 0, 0));
+      addSprite(new Sprite("images/floor.png", 0, 389));
       addSprite(new EightDirections("images/sonic.png", 10, 10, 0.2));
     }
 
@@ -38,7 +40,7 @@ class Scene02 : public Scene {
     }
 };
 
-int main() {  
+int main() {
   // Inicializa game engine
   Game game = Game("Minha Engine", 640, 480);
 

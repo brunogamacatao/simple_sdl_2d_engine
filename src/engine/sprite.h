@@ -10,6 +10,9 @@ class Sprite {
     std::string _path;
     double _x;
     double _y;
+    double _width;
+    double _height;
+    bool _scaled;
     SDL_Surface *_texture;
   
     SDL_Surface *loadSurface(std::string path);
@@ -17,6 +20,7 @@ class Sprite {
     bool _loaded = false;
     
     Sprite(std::string path, double x, double y);
+    Sprite(std::string path, double x, double y, double width, double height);
     ~Sprite();
 
     void load();
