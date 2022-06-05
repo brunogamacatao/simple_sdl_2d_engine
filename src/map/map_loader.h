@@ -1,1 +1,3 @@
-void load_map();
+#include<string>
+
+void load_map(std::string fileName);

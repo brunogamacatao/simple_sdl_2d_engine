@@ -35,3 +35,4 @@ add_executable(hello01 ${TARGET_SRC})
 target_link_libraries(hello01 ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES} fmt::fmt ZLIB::zlib tinyxml2::tinyxml2)
 
 file(COPY "${CMAKE_SOURCE_DIR}/images" DESTINATION "${CMAKE_SOURCE_DIR}/build/")
+file(COPY "${CMAKE_SOURCE_DIR}/maps" DESTINATION "${CMAKE_SOURCE_DIR}/build/")

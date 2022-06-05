@@ -4,9 +4,8 @@
 #include <cstdio>
 #include <cstdlib>
 
-void load_map() {
+void load_map(std::string fileName) {
   Tmx::Map *map = new Tmx::Map();
-  std::string fileName = "/home/bruno/dev/bruno/tmxparser/test/example/example.tmx";
   map->ParseFile(fileName);
 
   if (map->HasError()) {

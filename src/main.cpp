@@ -41,6 +41,8 @@ class Scene02 : public Scene {
 };
 
 int main() {
+  load_map("maps/example.tmx");
+
   // Inicializa game engine
   Game game = Game("Minha Engine", 640, 480);
 
